@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  sentinel:
+    image: sentinel
+    build:
+      context: .
+      dockerfile: Sentinel/Server/Dockerfile
+    ports:
+      - "80:80"
+    networks:
+     - my-network
+  
+  fakedataapi:
+    image: fakeapi
+    container_name: Api
+    build:
+      context: .
+      dockerfile: Sentinel/FakeDataApi/Dockerfile
+    ports:
+      - "5002:5002" 
+    networks:
+     - my-network
+
+networks:
+  my-network:
+    external: true

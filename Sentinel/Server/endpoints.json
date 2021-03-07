@@ -1,0 +1,29 @@
+{
+  "endpoints" : [
+    {
+      "url": "http://Api:5002/data/v1/number",
+      "tf_sec": 10,
+      "id": "1"
+    },
+    {
+      "url": "http://Api:5002/data/v2/number",
+      "tf_sec": 20,
+      "id": "2"
+    },
+    {
+      "url": "http://Api:5002/data/v3/number",
+      "tf_sec": 30,
+      "id": "3"
+    },
+    {
+      "url": "http://Api:5002/data/v4/number",
+      "tf_sec": 40,
+      "id": "4"
+    },
+    {
+      "url": "http://Api:5002/data/v5/number",
+      "tf_sec": 50,
+      "id": "5"
+    }
+  ]
+}
